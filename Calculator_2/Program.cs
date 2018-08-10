@@ -31,29 +31,45 @@ namespace Calculator_2
             {
                 if (operation == "add")
                 {
-                    //pass the value of numberFirst and numberSecond into addFirst and addSecond
-                    AddNumbers(numberFirst, numberSecond);
+                    //create a double called solution using the method Addnumbers,
+                    //by passing the value of numberFirst and numberSecond into addFirst and addSecond
+                    double solution = AddNumbers(numberFirst, numberSecond);
+
+                    Console.WriteLine("Your solution is: " + solution);
+
                     //close the do-while loop
                     finishedCalculations = true;
                 }
                 else if (operation == "subtract")
                 {
-                    //pass the value of numberFirst and numberSecond into subFirst and subSecond
-                    SubtractNumbers(numberFirst, numberSecond);
+                    //create a double called solution using the method Addnumbers,
+                    //by passing the value of numberFirst and numberSecond into subFirst and subSecond
+                    double solution = SubtractNumbers(numberFirst, numberSecond);
+
+                    Console.WriteLine("Your solution is: " + solution);
+
                     //close the do-while loop
                     finishedCalculations = true;
                 }
                 else if (operation == "multiply")
                 {
-                    //pass the value of numberFirst and numberSecond into multFirst and multSecond
-                    MultiplyNumbers(numberFirst, numberSecond);
+                    //create a double called solution using the method Addnumbers,
+                    //by passing the value of numberFirst and numberSecond into multFirst and multSecond
+                    double solution = MultiplyNumbers(numberFirst, numberSecond);
+
+                    Console.WriteLine("Your solution is: " + solution);
+
                     //close the do-while look
                     finishedCalculations = true;
                 }
                 else if (operation == "divide")
                 {
-                    //pass the value of numberFirst and numberSecond into divFirst and divSecond
-                    DivideNumbers(numberFirst, numberSecond);
+                    //create a double called solution using the method Addnumbers,
+                    //by passing the value of numberFirst and numberSecond into divFirst and divSecond
+                    double solution = DivideNumbers(numberFirst, numberSecond);
+
+                    Console.WriteLine("Your solution is: " + solution);
+
                     //close the do-while loop
                     finishedCalculations = true;
                 }
@@ -64,34 +80,32 @@ namespace Calculator_2
                 }
             } while (finishedCalculations == false);
 
-            Console.WriteLine("Your solution is: " + solution);
-
             //keep the program open until enter is pressed
             Console.ReadLine();
         }
         private static double AddNumbers(double addFirst, double addSecond)
         {
-            double solution = addFirst + addSecond;
+            double methodSolution = addFirst + addSecond;
             //pass the value of solution back to Main
-            return solution;
+            return methodSolution;
         }
         private static double SubtractNumbers(double subFirst, double subSecond)
         {
             //pass the value of solution back to Main
-            double solution = subFirst - subSecond;
-            return solution;
+            double methodSolution = subFirst - subSecond;
+            return methodSolution;
         }
         private static double MultiplyNumbers(double multFirst, double multSecond)
         {
             //pass the value of solution back to Main
-            double solution = multFirst * multSecond;
-            return solution;
+            double methodSolution = multFirst * multSecond;
+            return methodSolution;
         }
         private static double DivideNumbers(double divFirst, double divSecond)
         {
             //pass the value of solution back to Main
-            double solution = divFirst / divSecond;
-            return solution;
+            double methodSolution = divFirst / divSecond;
+            return methodSolution;
         }
     }
 }

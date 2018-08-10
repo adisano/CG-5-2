@@ -25,7 +25,6 @@ namespace Calculator_2
             //set a boolean to false for the do-while loop
             bool finishedCalculations = false;
             //set a value to solution as a placeholder
-            double solution = 0;
 
             //start a do-while loop
             do
@@ -34,7 +33,6 @@ namespace Calculator_2
                 {
                     //pass the value of numberFirst and numberSecond into addFirst and addSecond
                     AddNumbers(numberFirst, numberSecond);
-                    Console.WriteLine("Your solution is: " + solution);
                     //close the do-while loop
                     finishedCalculations = true;
                 }
@@ -42,7 +40,6 @@ namespace Calculator_2
                 {
                     //pass the value of numberFirst and numberSecond into subFirst and subSecond
                     SubtractNumbers(numberFirst, numberSecond);
-                    Console.WriteLine("Your solution is: " + solution);
                     //close the do-while loop
                     finishedCalculations = true;
                 }
@@ -50,7 +47,6 @@ namespace Calculator_2
                 {
                     //pass the value of numberFirst and numberSecond into multFirst and multSecond
                     MultiplyNumbers(numberFirst, numberSecond);
-                    Console.WriteLine("Your solution is: " + solution);
                     //close the do-while look
                     finishedCalculations = true;
                 }
@@ -58,44 +54,43 @@ namespace Calculator_2
                 {
                     //pass the value of numberFirst and numberSecond into divFirst and divSecond
                     DivideNumbers(numberFirst, numberSecond);
-                    Console.WriteLine("Your solution is: " + solution);
                     //close the do-while loop
                     finishedCalculations = true;
                 }
                 else
                 {
                     Console.WriteLine("Please enter a valid operation type.");
+                    operation = Console.ReadLine();
                 }
             } while (finishedCalculations == false);
 
+            Console.WriteLine("Your solution is: " + solution);
 
-
-            
             //keep the program open until enter is pressed
             Console.ReadLine();
         }
         private static double AddNumbers(double addFirst, double addSecond)
         {
-            solution = addFirst + addSecond;
+            double solution = addFirst + addSecond;
             //pass the value of solution back to Main
             return solution;
         }
         private static double SubtractNumbers(double subFirst, double subSecond)
         {
             //pass the value of solution back to Main
-            solution = subFirst - subSecond;
+            double solution = subFirst - subSecond;
             return solution;
         }
         private static double MultiplyNumbers(double multFirst, double multSecond)
         {
             //pass the value of solution back to Main
-            solution = multFirst * multSecond;
+            double solution = multFirst * multSecond;
             return solution;
         }
         private static double DivideNumbers(double divFirst, double divSecond)
         {
             //pass the value of solution back to Main
-            solution = divFirst / divSecond;
+            double solution = divFirst / divSecond;
             return solution;
         }
     }

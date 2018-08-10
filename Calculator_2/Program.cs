@@ -83,24 +83,48 @@ namespace Calculator_2
             //keep the program open until enter is pressed
             Console.ReadLine();
         }
+        /// <summary>
+        ///     Adds the two numbers entered by the user
+        /// </summary>
+        /// <param name="addFirst">The first number</param>
+        /// <param name="addSecond">The second number</param>
+        /// <returns>A sum</returns>
         private static double AddNumbers(double addFirst, double addSecond)
         {
             double methodSolution = addFirst + addSecond;
             //pass the value of solution back to Main
             return methodSolution;
         }
+        /// <summary>
+        ///     Subtracts the two numbers entered by the user
+        /// </summary>
+        /// <param name="subFirst">The first number</param>
+        /// <param name="subSecond">The second number</param>
+        /// <returns>A difference</returns>
         private static double SubtractNumbers(double subFirst, double subSecond)
         {
             //pass the value of solution back to Main
             double methodSolution = subFirst - subSecond;
             return methodSolution;
         }
+        /// <summary>
+        /// Multiplies the two numbers entered by the user
+        /// </summary>
+        /// <param name="multFirst">The first number</param>
+        /// <param name="multSecond">The second number</param>
+        /// <returns>A product</returns>
         private static double MultiplyNumbers(double multFirst, double multSecond)
         {
             //pass the value of solution back to Main
             double methodSolution = multFirst * multSecond;
             return methodSolution;
         }
+        /// <summary>
+        /// Divides the two numbers entered by the user
+        /// </summary>
+        /// <param name="divFirst">The first number</param>
+        /// <param name="divSecond">The second number</param>
+        /// <returns>A quotient</returns>
         private static double DivideNumbers(double divFirst, double divSecond)
         {
             //pass the value of solution back to Main
